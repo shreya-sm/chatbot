@@ -1,0 +1,104 @@
+body{
+    margin: 0px;
+}
+
+#navbar ul li {
+
+}
+#navbar ul li a {
+  color: white;
+}
+#navbar li a:hover{
+  color: black;
+  opacity: 0.9;
+}
+
+.navbar-nav>.active>a {
+  font-weight: bold;
+}
+
+/* HEADER */
+.img1{
+  height: 115px;
+  width: 130px;
+  margin-left: 40px;
+}
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+     width: 100%;
+   }
+}
+
+/*.heading{
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+*/
+.heading h4{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.heading p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-parent{
+    width: 1100px;
+    margin : auto;
+
+
+    display: flex;
+}
+.content-text{
+    width: 1000px;
+    text-align: center;
+    padding-left:30px;
+}
+
+.content-list-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+    font-weight: bold;
+    font-size : 15px;
+}
+.content-list-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    font-weight: lighter;
+    font-size : 13px;
+}
+.content-text-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+    font-size: 15px;
+    font-weight: 700px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+
+}
+.content-text-para{
+    font-size: 17px;
+    text-align: initial;
+}
+
+
+footer {
+  background-color: #225428;
+  color: white;
+
+}
+
+footer a:link {
+  color: white;
+}
+
+footer a:hover {
+text-decoration: none;
+color: black;
+}

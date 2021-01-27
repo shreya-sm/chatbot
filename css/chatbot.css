@@ -1,0 +1,33 @@
+.chat_icon{
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  font-size: 50px;
+  color : black;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform .2s;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+}
+.chat_icon:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+.chat_box{
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  width: 350px;
+  height:75vh;
+  background: #dedede;
+  z-index: 1000;
+  transition: all 0.3s ease-out;
+  transform: scaleY(0);
+}
+
+.chat_box.active{
+  transform: scaleY(1);
+}

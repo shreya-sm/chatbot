@@ -1,0 +1,47 @@
+.box-1 {
+    color: black;
+    border: 1px solid #03224435;
+    border-radius: 5px;
+    text-align: justify;
+    background-color: white;
+}
+.box-1 a {
+    display: block;
+    color: #01366a;
+    text-decoration: none;
+}
+.readmore {
+    text-align: end;
+    margin: 5px 10px 10px 10px;
+}
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 3px 10px;
+    color: #011c38;
+    background-color: #8e99a535;
+    text-align: center;
+}
+.vcPhoto img {
+    margin-top: 20px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 100px;
+    float: left;
+    display: block;
+}
+.vcMessage {
+    padding: 10px;
+    margin-top: 10px;
+    color: black;
+}
+.vcQuote{
+  text-transform: capitalize;
+text-align: center;
+font-size: 13px;
+color: #011c38;
+margin: 10px 0px 10px 0px;
+font-family: "EB Garamond", serif;
+font-style: italic;
+}

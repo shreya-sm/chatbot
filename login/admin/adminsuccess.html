@@ -1,0 +1,117 @@
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Login Successful</title>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568f472307.js" crossorigin="anonymous"></script>
+</head>
+<style>
+/* HEADER */
+.img1{
+  height: 115px;
+  width: 130px;
+  margin-left: 40px;
+}
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+     width: 100%;
+   }
+}
+
+/*.heading{
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+*/
+.heading h4{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.heading p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+btn a {
+  text-decoration: none;
+  color: white;
+}
+btn a:hover {
+  color: black;
+}
+
+</style>
+
+<body>
+  <!--HEADER START -->
+    <div class="container" style="margin-top:30px; margin-bottom:20px">
+    <div class="row">
+      <div class="col-lg-2">
+        <img class="mx-auto d-block img1" src="../../img/logo.jpg" >
+      </div>
+      <div class="col-lg-10" >
+
+        <div class="heading">
+          <h4>INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN</h4>
+          <p>
+            (Established by Govt. of Delhi wide Act 9 of 2012)
+          </p>
+          <p>
+            (Formerly Indira Gandhi Institute of Technology)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- HEADER END -->
+
+
+          <div class="middle-content mx-2">
+          <div class="container-fluid bg-dark mx-auto py-2 rounded-sm">
+
+					<button type="button" class="btn btn-success float-right mr-4"><a href="adminlogout.php" style = "color: white; font-weight: bold;">Logout</a></button>
+				<?php // endif ?>
+        <h3 class="ml-4" style="color:white;">Welcome Admin! </h3>
+      </div>
+      <br><br><br>
+      <div class="container mb-4" style="text-align: center">
+      <div class ="row">
+        <div class ="col-sm-6 mx-auto">
+          <div class="card bg-light mx-auto mt-4">
+            <div class="card-body">
+              <p> Add new queries and their replies in the Chatbot Database</p>
+              <br>
+              <button type="button" class="btn btn-dark"><a href="add_query.html">Add queries </a></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class = "col-sm-6 mx-auto">
+            <div class="card bg-light mx-auto mt-4">
+              <div class="card-body">
+                <p>See all the Queries that are present in the Chatbot Database</p>
+                <br>
+                <button type="button" class="btn btn-dark"><a href="display.php">Show Queries</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>

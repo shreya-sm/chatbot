@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="studentlogin.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568f472307.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<!-- NAVBAR START-->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-success" id ="navbar">
+				<div class="container">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+								<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="navbar-collapse collapse" id="navbar10">
+								<ul class="navbar-nav nav-fill w-100">
+										<li class="nav-item">
+												<a class="nav-link" href="../../index.html">HOME</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="../../about-us.html">ABOUT US</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="../../departments.html">DEPARTMENTS</a>
+										</li>
+										<li class="nav-item active">
+												<a class="nav-link" href="login.html">SIGN IN</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="../admin/admin.html">ADMIN</a>
+										</li>
+								</ul>
+						</div>
+				</div>
+		</nav>
+	<!-- NAVBAR END -->
+
+	<!--HEADER START -->
+	  <div class="container" style="margin-top:70px; margin-bottom:20px">
+	  <div class="row">
+	    <div class="col-lg-2">
+	      <img class="mx-auto d-block img1" src="../../img/logo.jpg" >
+	    </div>
+	    <div class="col-lg-10" >
+
+	      <div class="heading">
+	        <h4>INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN</h4>
+	        <p>
+	          (Established by Govt. of Delhi wide Act 9 of 2012)
+	        </p>
+	        <p>
+	          (Formerly Indira Gandhi Institute of Technology)
+	        </p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- HEADER END -->
+
+	<div class="hero">
+	    <div class="container">
+            <div class="row">
+				<div class="col-xs-4 offset-md-4 form-div">
+                    <form action="register.php" method="POST" name="f1" onsubmit="return matchpass()">
+
+                        <h2 class="text-center">New User Registration</h2>
+
+
+
+						<div class="form-group">
+							<label for="email">Email</label>
+                            <input type="email" class="form-control form-control-lg" name="email" value="" placeholder="mail@gmail.com" required />
+                        </div>
+						    <div class="form-group">
+							<label for="contact">Contact</label>
+                            <input type="text" class="form-control form-control-lg" name="contact"  placeholder="+91**********" required />
+                        </div>
+						    <div class="form-group">
+							<label for="fullname">Full Name</label>
+                            <input type="text" class="form-control form-control-lg" name="fullname" placeholder="Enter Your Name" required />
+                        </div>
+						    <div class="form-group">
+							<label for="course">Course</label>
+							<select class="form-control" id="sel1" name="course" required>
+							<option value="B.tech(CSE)">B.tech(CSE)</option>aise krke values sabme daal dena okkyahan bhi aur
+							<option value="M.Tech CSE(Artificial Intelligence)">M.Tech CSE(Artificial Intelligence)</option>
+							<option value="B.Tech(ECE)">B.Tech(ECE)</option>
+							<option value="M.Tech ECE(VLSI Design)">M.Tech ECE(VLSI Design)</option>
+							<option value="M.Tech(ECE)-Weekend Programme">M.Tech(ECE)-Weekend Programme</option>
+							<option value="B.tech(IT)">B.tech(IT)</option>
+							<option value="Master of Computer Applications(MCA)">Master of Computer Applications(MCA)</option>
+							<option value="M.Tech IT(Information Security Management)">M.Tech IT(Information Security Management)</option>
+							<option value="M.Tech(Information and Communication Technology)- Part Time">M.Tech(Information and Communication Technology)- Part Time</option>
+							<option value="B.tech(MAE)">B.tech(MAE)</option>
+							<option value="M.Tech(Robotics and Automation)">M.Tech(Robotics and Automation)</option>
+							<option value="B.tech-1st year all branches">B.tech-1st year all branches</option>
+							<option value="B.Architecture">B.Architecture</option>
+							<option value="M.Plan">M.Plan</option>
+							<option value="MBA">MBA</option>
+							<option value="BBA">BBA</option>
+							</select>
+
+                        </div>
+						    <div class="form-group">
+							<label for="year">Year</label>
+							<select class="form-control" id="sel1" name="year" required>
+							<option value='1'>1</option>
+							<option value='2'>2</option>
+							<option value='3'>3</option>
+							<option value='4'>4</option>
+						    </select>
+
+                        </div>
+						    <div class="form-group">
+							<label for="username">Username</label>
+                            <input type="text" class="form-control form-control-lg" name="username" value="" required placeholder="Enter username" />
+                        </div>
+                        <div class="form-group">
+							<label for="password">Password</label>
+                            <input type="password" class="form-control form-control-lg" onkeyup="check();" name="password_1"  placeholder="Enter Password" required />
+                        </div>
+                        <div class="form-group">
+							<label for="password">Confirm Password</label>
+                            <input type="password" class="form-control form-control-lg" onkeyup="check();" name="password_2" placeholder="Re-enter password" required />
+                        <!--	<div id="message">message</div> -->
+						</div>
+
+                        <div class="form-group">
+							<button type="submit" name="signup-btn" class="btn btn-primary btn-block btn-lg">Register</button>
+                        </div>
+
+                    <p class="loginhere">Already have an account? <a href="login.html" class="loginhere">Login here</a>
+                    </p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function matchpass() {
+		var firstpassword=document.f1.password_1.value;
+		var secondpassword=document.f1.password_2.value;
+		if(firstpassword==secondpassword) {
+			return true;
+		}
+		else {
+			alert("password must be same");
+			return false;
+		}
+	}
+
+</script>
+
+<!-- FOOTER START-->
+<footer class="page-footer font-small mdb-color pt-4">
+
+	<!-- Footer Links -->
+	<div class="container text-center text-md-left">
+
+		<!-- Footer links -->
+		<div class="row text-center text-md-left mt-3 pb-3">
+
+
+			<hr class="w-100 clearfix d-md-none">
+
+			<!-- Grid column -->
+			<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+				<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+				<p>
+					<a href="#!">SWAYAM</a>
+				</p>
+				<p>
+					<a href="#!">Information Under Contract Labour Act</a>
+				</p>
+				<p>
+					<a href="#!">Women Helpline Numbers</a>
+				</p>
+			</div>
+
+			<hr class="w-100 clearfix d-md-none">
+
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+				<h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+				<p>
+					<a href="#!">NPTEL</a>
+				</p>
+				<p>
+					<a href="#!">Spoken Tutorial</a>
+				</p>
+				<p>
+					<a href="#!">Delhi Public Library</a>
+				</p>
+				<p>
+					<a href="#!">IGDTUW Privacy Policy</a>
+				</p>
+			</div>
+			<!-- Grid column -->
+
+
+
+			<!-- Grid column -->
+			<hr class="w-100 clearfix d-md-none">
+
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+				<h6 class="text-uppercase mb-4 font-weight-bold">CONTACTS</h6>
+				<p>
+					<i class="fas fa-home mr-3"></i>INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN (IGDTUW)</p>
+				<p>
+					<i class="fas fa-envelope mr-3"></i>   Madrasa Road
+																									Opposite St. James Church
+																									Kashmere Gate
+																									Delhi-110006</p>
+				<p>
+					<i class="fas fa-phone mr-3"></i> Telephone: 011- 23900261, </p>
+				<p>
+					<i class="fas fa-print mr-3"></i>011- 23900264</p>
+			</div>
+			<!-- Grid column -->
+
+		</div>
+		<!-- Footer links -->
+
+		<hr>
+
+		<!-- Grid row -->
+		<div class="row d-flex align-items-center">
+
+			<!-- Grid column -->
+			<div class="col-md-12 col-lg-12">
+
+				<!--Copyright-->
+				<p class="text-center text-md-left">Ã‚Â© Copyright Ã‚Â© 2020 Indira Gandhi Delhi Technichal University for Women. All Rights Reserved.
+Best Viewed in 1024 x 768 Resolution.
+					<a href="https://mdbootstrap.com/">
+						<strong> </strong>
+					</a>
+				</p>
+
+			</div>
+			<!-- Grid column -->
+
+		</div>
+		<!-- Grid row -->
+
+	</div>
+	<!-- Footer Links -->
+
+</footer>
+<!-- FOOTER END -->
+
+
+</body>
+</html>

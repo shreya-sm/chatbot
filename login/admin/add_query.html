@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Queries to Chatbot</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Castoro&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568f472307.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">-->
+
+	<style>
+	.form-div {
+      margin:auto;
+      padding:10px 10px 10px 10px;
+
+      font-family: 'Castoro', serif;
+      color: black;
+  }
+
+
+  form p {
+
+      font-size: 20px;
+      color:black;
+  }
+
+	</style>
+</head>
+<body style ="background: url(background.png);background-repeat: no-repeat;">
+	<div class="card bg-light mx-auto " style="width:400px; margin-top:90px">
+		<div class="card-body">
+			<h3 class="mx-auto my-2" style="text-align:center"> Add Queries in the Chatbot Database</h3>
+			<hr>
+        <div class="row">
+					<div class=" form-div">
+            <form action="add.php" method="POST">
+					    <div class="form-group">
+								<label for="queries"><p>Queries</p></label>
+                    <input type="text" class="form-control form-control-lg" name="queries" placeholder="Enter your question" />
+              </div>
+                  <div class="form-group">
+										<label for="replies"><p>Replies</p></label>
+                      <input type="text" class="form-control form-control-lg" name="replies" placeholder="Enter Answer" required />
+                  </div>
+                    <div class="form-group">
+											<button type="submit" name="login-btn" class="btn btn-dark btn-block btn-lg">Add to Chatbot</button>
+                    </div>
+                </form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+</body>
+</html>

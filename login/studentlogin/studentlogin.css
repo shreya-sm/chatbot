@@ -1,0 +1,95 @@
+/*Login and Register */
+
+/* NAVBAR */
+
+#navbar ul li {
+  /*font-weight: bold;*/
+}
+#navbar ul li a {
+  color: white;
+}
+#navbar li a:hover{
+  color: black;
+  opacity: 0.9;
+}
+
+.navbar-nav>.active>a {
+  /*background-color: #228b22	;*/
+  font-weight: bold;
+}
+
+
+/* HEADER */
+.img1{
+  height: 115px;
+  width: 130px;
+  margin-left: 40px;
+}
+@media only screen and (max-width: 600px) {
+  [class*="col-"] {
+     width: 100%;
+   }
+}
+
+/*.heading{
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+*/
+.heading h4{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+.heading p{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-div {
+	margin:50px auto;
+	padding:25px 15px 10px 15px;
+	border:1px solid black;
+	border-radius:5px;
+	font-family: 'Castoro', serif;
+	color: white;
+}
+
+#textctr{
+	color: white;
+/*	border-bottom:2px solid black;*/
+}
+
+form p {
+	font-size:.89em;
+	color:white;
+}
+.hero{
+	height: 100%;
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(d1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+}
+
+footer {
+  background-color: #225428;
+  color: white;
+
+}
+
+footer a:link {
+  color: white;
+}
+
+footer a:hover {
+text-decoration: none;
+color: black;
+}
